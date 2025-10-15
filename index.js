@@ -98,28 +98,6 @@
 // console.log("the small number is : ",smallestOf3Numbers("test",5,2));
 // console.log("the small number is : ",smallestOf3Numbers(44,"5",2));
 // console.log("the small number is : ",smallestOf3Numbers("5",6,2));
-
 // console.log("the small number is : ",smallestOf3Numbers(3,5,5));
-
-
-
-// reverse String
-
-const reverseStr=(str)=>{
-    const newArr=[...str]
-    const reverseArr=[];
-
-    for (let index = newArr.length-1; index >=0; index--) {
-        const element = newArr[index];      
-        reverseArr.push(element)
-    }
-    return reverseArr.join("")
-
-};
-
-console.log(reverseStr("odri"));
-
-// console.log(reverseStr("Hello"));
-
 
 

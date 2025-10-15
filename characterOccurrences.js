@@ -24,24 +24,51 @@
 
 
 
-const characterCounter=(sentence)=>{
 
-    let characterObject={};
 
-    for (let index = 0; index < sentence.length; index++) {
-        
-        if (characterObject[sentence[index]]===undefined) {
-            characterObject[sentence[index]]=1;
+// const characterCounter=(sentence)=>{
+
+//     let characterObject={};
+
+//     for (let index = 0; index < sentence.length; index++) {
+
+//         if (characterObject[sentence[index]]===undefined) {
+//             characterObject[sentence[index]]=1;
                         
-        }else if(characterObject[sentence[index]]){
-            characterObject[sentence[index]]++;
-        }
+//         }else if(characterObject[sentence[index]]){
+//             characterObject[sentence[index]]++;
+//         }
         
+//     }
+
+//     console.log(characterObject);
+    
+// }
+
+
+// characterCounter("shanawaj hossain")
+
+
+
+
+
+
+
+
+
+
+function countCharacters2 (inputString) {
+inputString = inputString. toLowerCase();
+const splittedString = inputString.split("");
+splittedString. reduce( (acc, char) => {
+   
+    console.log(acc);
+    if(!ac[char]){
+     acc [char] = 0;
     }
 
-    console.log(characterObject);
-    
+acc[char] = acc[char] + 1;
+return acc;
+})
+
 }
-
-
-characterCounter("shanawaj hossain")
